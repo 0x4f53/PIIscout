@@ -6,9 +6,10 @@ Personal Identifiable Information (PII) is defined as: Any representation of inf
 
 **Note**: This list is for educational purposes only, to demonstrate how easy it is to find mismanaged PII online. Please do not use it to harass or dox people with leaked personal info. I will NOT be responsible for any such incident
 
-## Colleges
-
-### Students
-```
-"college" site:ac.in "@gmail.com" "student" type:pdf
-```
+## Countries
+- India
+- Saudi Arabia
+- Canada
+- United States
+- Pakistan
+- Israel
