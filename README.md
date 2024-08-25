@@ -9,4 +9,10 @@ Usage is pretty simple: go to the country you'd like, pick a dork from the md fi
 
 You can also use this other tool I authored named [Octopii](https://github.com/redhuntlabs/Octopii) to extract PII.
 
+## Additional resources:
+
+- https://www.consilium.europa.eu/prado/en/prado-start-page.html
+
+- http://www.banzhengid.com/
+
 **Note**: This list is for educational purposes only, to demonstrate how easy it is to find mismanaged PII online. Please do not use it to harass or dox people with leaked personal info. I will NOT be responsible for any such incident
