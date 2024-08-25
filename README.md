@@ -13,6 +13,6 @@ You can also use this other tool I authored named [Octopii](https://github.com/r
 
 - https://www.consilium.europa.eu/prado/en/prado-start-page.html
 
-- http://www.banzhengid.com/IND-banzheng/
+- http://www.banzhengid.com/data/sitemap.html
 
 **Note**: This list is for educational purposes only, to demonstrate how easy it is to find mismanaged PII online. Please do not use it to harass or dox people with leaked personal info. I will NOT be responsible for any such incident
