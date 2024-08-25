@@ -38,3 +38,13 @@ site:*.gov.in intext:enrollment AND intext:@gmail.com OR intext:@yahoo.com filet
 ```
 site:*.gov.in intext:aadhaar AND intext:gender AND intext:name intitle:list filetype:pdf OR filetype:xlsx
 ```
+
+### GST Certificate
+
+```
+site:*.nic.in intext:"Form GST REG-06" filetype:pdf
+```
+
+```
+site:*.gov.in intext:"Form GST REG-06" filetype:pdf
+```
