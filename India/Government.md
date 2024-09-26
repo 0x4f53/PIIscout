@@ -37,6 +37,7 @@ site:*.gov.in intext:enrollment AND intext:@gmail.com OR intext:@yahoo.com filet
 
 ```
 site:*.gov.in intext:aadhaar AND intext:gender AND intext:name intitle:list filetype:pdf OR filetype:xlsx
+site:*.gov.in mera aadhar meri pehchan filetype:pdf
 ```
 
 ### GST Certificate
