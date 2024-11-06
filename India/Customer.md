@@ -15,3 +15,7 @@ intext:"passport no" intext:"nationality" intext:"date of birth" site:*.sa
 ```
 intext:"offer letter for employment" filetype:pdf -format
 ```
+
+```
+intext:"Termination Letter" -template -format -sample filetype:pdf
+```
