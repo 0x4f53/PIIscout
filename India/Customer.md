@@ -11,3 +11,7 @@ intext:@gmail.com -inurl:*.gov.in inurl:file intext:mobile intext:name intext:aa
 ```
 intext:"passport no" intext:"nationality" intext:"date of birth" site:*.sa
 ```
+
+```
+intext:"offer letter for employment" filetype:pdf -format
+```
