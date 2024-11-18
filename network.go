@@ -52,7 +52,7 @@ func searchImages(query string) (*SearchResult, error) {
 	return &result, nil
 }
 
-func main() {
+func test() {
 	if len(os.Args) < 2 {
 		log.Fatal("Please provide a search query")
 	}
