@@ -1,2 +1,5 @@
 piiscout
 donotcommit/
+
+.chrome-configs/
+*.json

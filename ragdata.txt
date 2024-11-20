@@ -1,0 +1,16 @@
+you are an analyst. extract all available text from the attached document. predict any entries if they are blank. provide only the following data as output in JSON format only, with nothing else: 
+{ 
+    type_of_document : "",
+    identification_numbers: [],
+    country_of_origin: "",
+    phone_number_information: <list all phone numbers. add the country code if applicable.>,
+    email_information: <list all email addresses>,
+    extracted_text_snippets : <list all elements that you used for recognition>,
+    person_names : <list full names of individuals if they exist>,
+    entities_and_companies : [],
+    date_of_birth : "",
+    gender : "",
+    addresses_and_locations: [],
+    ai_overview : <provide a brief overview of what you think this is>,
+    type_of_entity : <is this a person or an organization?>,
+}
