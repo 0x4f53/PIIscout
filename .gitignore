@@ -2,4 +2,5 @@ piiscout
 donotcommit/
 
 .chrome-configs/
+downloaded_files/
 *.json
