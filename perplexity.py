@@ -12,7 +12,7 @@ options = webdriver.ChromeOptions()
 options.add_argument("--lang=en")
 
 #driver = uc.Chrome(service=Service(ChromeDriverManager().install()), options=options) # Create a driver instance using undetected_chromedriver
-driver = Driver(uc=True, headless=False, user_data_dir="./.chrome-configs/")
+driver = Driver(uc=True, headless=True, user_data_dir="./.chrome-configs/")
 
 url = "https://perplexity.ai"
 
