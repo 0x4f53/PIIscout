@@ -414,7 +414,7 @@ type SearchResponse struct {
 	Items []SearchResult `json:"items"`
 }
 
-func FetchDriveLinks(apiKey, cx, query, from, to string, includeLabel bool, outputFile, folderPath string) error {
+func FetchPIILinks(apiKey, cx, query, from, to string, includeLabel bool, outputFile, folderPath string) error {
 	fmt.Println("Fetching links for query:", query) // Debug print
 	dateRange, err := CalculateDateRange(from, to)
 	if err != nil {
@@ -607,7 +607,7 @@ func main() {
 	// Iterate through queries and execute
 	for _, query := range queries {
 		fmt.Printf("Executing query: %s\n", query)
-		if err := FetchDriveLinks(apiKey, cx, query, fromDate, toDate, includeLabel, outputFile, folderPath); err != nil {
+		if err := FetchPIILinks(apiKey, cx, query, fromDate, toDate, includeLabel, outputFile, folderPath); err != nil {
 			fmt.Printf("Error executing query: %v\n", err)
 		}
 	}
