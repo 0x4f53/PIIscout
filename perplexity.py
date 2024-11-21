@@ -1,4 +1,8 @@
-import time, file_utils, string_utils
+import time, file_utils, string_utils, argparse
+
+parser = argparse.ArgumentParser(description="A script to demonstrate CLI arguments.")
+parser.add_argument("file_name", help="The filename to scan (supported: PDF, JPG, BMP, PNG, DOCX, TXT, XLS)")
+args = parser.parse_args()
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -18,9 +22,13 @@ url = "https://perplexity.ai"
 
 driver.get(url)
 
+start_time = time.time()  # Record the start time
+
 file_input = driver.find_element(By.XPATH, "//input[@type='file']")
 
-file_path = "/home/owais/Desktop/research/PIIscout/donotcommit/icici.jpeg"  # Replace with the actual file path
+elapsed_time = time.time() - start_time
+
+file_path = "/home/owais-zn/Desktop/research/PIIscout/donotcommit/vehicle.pdf"  # Replace with the actual file path
 file_input.send_keys(file_path)
 
 button = driver.find_element(By.XPATH, "//button[@aria-label='Submit']")
@@ -29,8 +37,12 @@ def is_button_disabled(button):
     return button.get_attribute("disabled") is not None
 
 while is_button_disabled(button):
-    print("Button is disabled, waiting for it to be enabled...")
+    
+    elapsed_time = time.time() - start_time
+    formatted_time = time.strftime("%H:%M:%S", time.gmtime(elapsed_time))
+    print(f"Processing file... (elapsed time: {formatted_time})")
     time.sleep(1)
+
     textarea = driver.find_element(By.TAG_NAME, "textarea")
     textarea.clear()
     textarea.send_keys(file_utils.readRagData(file_utils.RAG_FILE_PII_SCAN))
