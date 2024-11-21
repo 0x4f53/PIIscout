@@ -1,0 +1,22 @@
+dorks:
+  - filetype:pdf intext:"Certificate cum Policy Schedule"
+  - intext:"PRIVATE CAR PACKAGE POLICY" intext:"INSURED NAME" intext:"ICICI" filetype:pdf
+  - intext:@gmail.com -inurl:*.gov.in inurl:file intext:mobile intext:name intext:aadhaar
+  - intext:@gmail.com -inurl:*.gov.in inurl:file intext:mobile intext:name intext:aadhaar intext:employee intext:account filetype:pdf
+  - intext:"passport no" intext:"nationality" intext:"date of birth" site:*.sa
+  - intext:"offer letter for employment" filetype:pdf -format
+  - intext:"Termination Letter" -template -format -sample filetype:pdf
+  - site:*.edu OR site:*.ac.in intext:@gmail.com AND intext:student filetype:pdf OR filetype:xlsx
+  - intext:"+91" intext:@gmail.com inurl:*.in filetype:pdf OR filetype:xlsx
+  - site:*.edu OR site:*.ac.in intext:@gmail.com AND intext:faculty filetype:pdf OR filetype:xlsx
+  - site:*.gov.in intext:@gmail.com AND intext:@yahoo.com OR intext:"employee id" filetype:pdf OR filetype:xlsx
+  - site:*.gov.in intext:employee AND intext:@gmail.com OR intext:@yahoo.com intitle:list filetype:pdf OR filetype:xlsx
+  - site:*.gov.in intext:gender intext:name intext:@gmail.com OR intext:@yahoo.com filetype:pdf OR filetype:xlsx
+  - site:*.gov.in intext:@gmail.com AND intext:mobile filetype:pdf OR filetype:xlsx
+  - site:*.gov.in intext:@gmail.com AND intext:mobile AND intext:police filetype:pdf OR filetype:xlsx
+  - site:*.gov.in intext:@gmail.com AND intext:mobile AND intext:fir filetype:pdf OR filetype:xlsx
+  - site:*.gov.in intext:enrollment AND intext:@gmail.com OR intext:@yahoo.com filetype:pdf OR filetype:xlsx
+  - site:*.gov.in intext:aadhaar AND intext:gender AND intext:name intitle:list filetype:pdf OR filetype:xlsx
+  - site:*.gov.in mera aadhar meri pehchan filetype:pdf
+  - site:*.nic.in intext:"Form GST REG-06" filetype:pdf
+  - site:*.gov.in intext:"Form GST REG-06" filetype:pdf
