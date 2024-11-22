@@ -182,12 +182,11 @@ func LoadQueriesFromYAML(filePath string) ([]string, error) {
 func main() {
 	// Command-line arguments
 	var (
-		apiKey       string
-		cx           string
-		country      string
-		fromDate     string
-		toDate       string
-		includeLabel bool
+		apiKey   string
+		cx       string
+		country  string
+		fromDate string
+		toDate   string
 	)
 
 	flag.StringVar(&apiKey, "apiKey", "", "Google API key")
@@ -195,8 +194,10 @@ func main() {
 	flag.StringVar(&country, "country", "", "Country name (e.g., canada, india, pakistan)")
 	flag.StringVar(&fromDate, "from", "", "Start date (yyyy-mm-dd-hh)")
 	flag.StringVar(&toDate, "to", "", "End date (yyyy-mm-dd-hh)")
-	flag.BoolVar(&includeLabel, "includeLabel", false, "Include labels in output")
 	flag.Parse()
+
+	// Set includeLabel to true by default
+	includeLabel := true
 
 	if country == "" {
 		log.Println("Error: --country is required")
