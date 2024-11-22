@@ -1,4 +1,4 @@
-import time, file_utils, string_utils, argparse, os
+import time, file_utils, string_utils, argparse, os, json
 
 parser = argparse.ArgumentParser(description="A script to demonstrate CLI arguments.")
 parser.add_argument("file_name", help="The filename to scan (supported: PDF, JPG, BMP, PNG, DOCX, TXT, XLS)")
@@ -105,4 +105,10 @@ element.click()
 # 6. kill driver
 driver.quit()
 
-print(string_utils.extract_substring(text))
+text = string_utils.extract_substring(text)
+
+data_dict = json.loads(text)
+file_utils.write_output(f"output/{string_utils.print_current_timestamp()}.json", json.dumps(data_dict))
+
+print(text)
+

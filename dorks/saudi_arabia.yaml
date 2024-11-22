@@ -1,0 +1,11 @@
+dorks:
+  - intext:"+966" intext:@gmail.com intext:Saudi filetype:pdf OR filetype:xlsx
+  - intext:"+966" intext:@gmail.com inurl:sa filetype:pdf
+  - inurl:edu.sa intext:@gmail.com AND intext:@yahoo.com intext:nationality filetype:pdf OR filetype:xlsx
+  - intext:"+966" intext:@gmail.com inurl:sa filetype:pdf OR filetype:xlsx
+  - intext:"يجب الالتزام بتنفيذ العزل الحراري"
+  - intext:"رخصة سياقة" intext:"DOB" filetype:pdf
+  - site:*.gov.in intext:aadhaar AND intext:gender AND intext:name intitle:list filetype:pdf OR filetype:xlsx
+  - intext:@gmail.com intext:"Passport No." intext:"Kingdom of Saudi Arabia" filetype:pdf 100000..999999
+  - intext:@gmail.com intext:"Iqama Number" filetype:pdf 1000000000..3000000000
+  - intext:@gmail.com intext:"National ID" filetype:pdf 1000000000..3000000000

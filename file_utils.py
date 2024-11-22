@@ -3,6 +3,11 @@ import os
 
 RAG_FILE_PII_SCAN = "ragdata.txt"
 
+def write_output(file_path, content):
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    with open(file_path, 'w') as file:
+        file.write(content)
+
 def readRagData (ragFile: str) -> str:
     with open (ragFile, "r") as ragFileData:
         ragData = ragFileData.read()

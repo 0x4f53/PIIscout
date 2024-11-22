@@ -1,4 +1,4 @@
-import re
+import re, datetime
 
 def extract_substring(text: str) -> str:
     start_marker = "Answer\njson"
@@ -14,3 +14,6 @@ def extract_substring(text: str) -> str:
     substring = text[start_index:end_index].strip()  # Extract and strip any surrounding whitespace
     
     return substring.strip()
+
+def print_current_timestamp():
+    return datetime.datetime.now().strftime("%Y%m%d%H%M%S")

@@ -6,3 +6,5 @@ downloaded_files/
 *.json
 
 .signInRequired
+
+.piiscoutCache/
