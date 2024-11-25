@@ -8,3 +8,5 @@ downloaded_files/
 .signInRequired
 
 .piiscoutCache/
+
+.env
