@@ -1,16 +1,19 @@
 you are an analyst. extract all available text from the attached document. predict any entries if they are blank. provide only the following data as output in JSON format only, with nothing else: 
 { 
     type_of_document : "",
-    identification_numbers: [],
+    captured_urls: <array of captured urls>,
+    associated_domains: <array of domains that this file may be associated with>,
+    identification_numbers: <array of unique identifiers or ID fields>,
     country_of_origin: "",
-    phone_number_information: <list all phone numbers. add the country code if applicable>,
-    email_information: <list all email addresses>,
-    extracted_text_snippets : <list all elements that can be extracted for classification>,
-    person_names : <list full names of individuals if they exist>,
-    entities_and_companies : [],
+    phone_number_information: <array of phone numbers. add the country code if applicable>,
+    email_information: <array of email addresses>,
+    extracted_text_snippets : <array of all elements that can be extracted for classification>,
+    person_names : <array of full names of individuals if they exist>,
+    entities_and_companies : <array of public and private companies and entities or government organizations>,
     date_of_birth : "",
+    date_of_issue : <add any significant date found in the document here, in DD-MM-YYYY format>,
     gender : "",
-    addresses_and_locations: [],
+    addresses_and_locations: <array of addresses, street names, areas, cities, regions or states, countries>,
     ai_overview : <explain what you think this is>,
     type_of_entity : <is this a person or an organization?>
 }

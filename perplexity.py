@@ -108,6 +108,10 @@ driver.quit()
 text = string_utils.extract_substring(text)
 
 data_dict = json.loads(text)
+data_dict["file_metadata"] = {
+    "file_path" : file_path
+    "file_url" : file_url
+}
 file_utils.write_output(f"output/{string_utils.print_current_timestamp()}.json", json.dumps(data_dict))
 
 print(text)

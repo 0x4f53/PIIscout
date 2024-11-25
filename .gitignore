@@ -1,5 +1,6 @@
 piiscout
 donotcommit/
+__pycache__/
 
 .chrome-configs/
 downloaded_files/

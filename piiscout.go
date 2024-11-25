@@ -14,6 +14,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/joho/godotenv"
 	"gopkg.in/yaml.v2"
 )
 
@@ -185,15 +186,20 @@ func LoadQueriesFromYAML(filePath string) ([]string, error) {
 func main() {
 	// Command-line arguments
 	var (
-		apiKey   string
-		cx       string
 		country  string
 		fromDate string
 		toDate   string
 	)
 
-	flag.StringVar(&apiKey, "apiKey", "", "Google API key")
-	flag.StringVar(&cx, "cx", "", "Custom search engine ID")
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatalf("Error loading .env file: %v", err)
+	}
+
+	// Read environment variables
+	apiKey := os.Getenv("CSE_API_KEY")
+	cx := os.Getenv("CSE_CX_KEY")
+
 	flag.StringVar(&country, "country", "", "Country name (e.g., canada, india, pakistan)")
 	flag.StringVar(&fromDate, "from", "", "Start date (yyyy-mm-dd-hh)")
 	flag.StringVar(&toDate, "to", "", "End date (yyyy-mm-dd-hh)")
